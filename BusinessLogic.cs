@@ -36,7 +36,7 @@ namespace Fertilizer.BL
             var area = CalculateArea(this.length, this.width);
             var nitroReq = CalculateNitrogenRequired(area);
                         
-            return (this.nitro / 100) / nitroReq;
+            return nitroReq / (this.nitro / 100);
         }
 
         /// <summary>
